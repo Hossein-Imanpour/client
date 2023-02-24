@@ -11,3 +11,127 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* =============================== header ================================================== */
+
+.header{
+/* background-color: rgb(221, 221, 221); */
+padding: 0 1rem;
+box-shadow: 2px 4px 5px #ccc;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+
+}
+.nav-title{
+
+}
+.darkMode{
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+/* ================ Filter Data ===================== */
+
+.main{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 1rem;
+}
+.input{
+  width: 30rem;
+border: none;
+padding: .5rem;
+/* background-color:red; */
+border-radius: .5rem;
+}
+.input:focus{
+  outline: 1px solid blue;
+
+}
+.select{
+  border: none;
+  /* background-color: red; */
+  padding: .5rem;
+  border-radius: .5rem;
+}
+.select{
+  background-color: #fff;
+  cursor: pointer;
+}
+/* =============================== cards ================================== */
+.patent-cards{
+margin-top: 3rem;
+}
+.card-section{
+
+}
+.body-cards{
+margin: 2rem;
+box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.534);
+border-radius: 5px 0px 0px 0px ;
+}
+.imgs{
+  width: 300px;
+  height: 150px;
+  border-radius: 5px 0px 0px 0px;
+}
+
+.content{
+  padding: 1rem;
+}
+.title{
+  /* text-align: center; */
+}
+/* =============================== end cards ============================== */
+
+/* ================ dark mode ======================= */
+.light.parent{
+  /* background-color: rgba(255, 255, 255, 0.137); */
+}
+.light .body-cards{
+  background-color: #ccc;
+  margin-bottom: 1rem;
+}
+.dark.parent{
+  background-color: hsl(207, 26%, 17%);
+}
+.dark .patent-cards{
+color: #fff;
+
+}
+.dark .body-cards{
+  background-color: hsl(209, 23%, 22%);
+}
+.dark{
+  background-color: #ccc;
+}
+.dark.header{
+  box-shadow: 3px 2px 6px rgb(245, 2, 2);
+  color: #fff;
+  background-color: hsl(207, 26%, 17%);
+}
+.dark .input{
+  background-color: hsl(209, 23%, 22%);
+  color: #fff;
+}
+light .input{
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(209, 23%, 22%);
+}
+.light .input{
+  background-color:hsla(0, 0%, 52%, 0.411);
+  /* background-color:#ccc; */
+  color: #000;
+}
+.light .select{
+  background-color:hsla(0, 0%, 52%, 0.411);
+}
+.dark .select{
+  background-color: hsl(209, 23%, 22%);
+  color: #fff;
+}

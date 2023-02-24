@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from 'react'
+import Cards from './components/Cards';
+import FilterData from './components/FilterData';
+import NavBar from './components/NavBar';
+import "bootstrap/dist/css/bootstrap.min.css";
+import './index.css';
 
 function App() {
+
+const [theme , setTheme ] = useState('light')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`parent ${theme === "light" ? "light" : "dark"}`}>
+      
+      <NavBar  theme={theme} setTheme={setTheme}/>
+      <FilterData theme={theme} setTheme={setTheme}/>
+      <Cards/>
+
+
     </div>
   );
 }
