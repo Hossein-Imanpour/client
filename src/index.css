@@ -68,9 +68,10 @@ border-radius: .5rem;
 margin-top: 3rem;
 }
 .card-section{
-
+padding-bottom: 5.3rem;
 }
 .body-cards{
+  max-width: 300px !important;
 margin: 2rem;
 box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.534);
 border-radius: 5px 0px 0px 0px ;
@@ -78,7 +79,7 @@ border-radius: 5px 0px 0px 0px ;
 .imgs{
   width: 300px;
   height: 150px;
-  border-radius: 5px 0px 0px 0px;
+  border-radius: 5px 0px 0px 0px !important;
 }
 
 .content{
@@ -95,7 +96,7 @@ border-radius: 5px 0px 0px 0px ;
 }
 .light .body-cards{
   background-color: #ccc;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 .dark.parent{
   background-color: hsl(207, 26%, 17%);
@@ -134,4 +135,35 @@ light .input{
 .dark .select{
   background-color: hsl(209, 23%, 22%);
   color: #fff;
+}
+
+
+/* =================================  detail page  ============================== */
+.patent-card{
+  margin-top: 5rem;
+}
+.parent-section-detail{
+  display: flex;
+  justify-content: space-evenly;
+}
+.detail-btn{
+  border: none;
+  margin-bottom: 2rem;
+  margin-left: 7rem;
+  width: 100px;
+  height: 25px;
+  border-radius: .5rem;
+
+}
+.imgs-detail{
+  width: 600px;
+  height: 300px;
+}
+
+.more-detail-about-country{
+  display: flex;
+  justify-content: space-between;
+}
+.right{
+  padding-right: 1rem;
 }

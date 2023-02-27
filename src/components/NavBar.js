@@ -2,9 +2,7 @@ import { useState } from "react";
 import { Container } from "react-bootstrap";
 
 const NavBar = ({ theme, setTheme }) => {
-  const [navIcon, setNavIcon] = useState(
-    // <ion-icon name="sunny-outline"></ion-icon>
-  "");
+
 const [titleDarkMode , setTitleDarkMode] = useState('Dark Mode')
   const handleTheme = () => {
       setTheme((prev) => (prev === "light" ? "dark" : "light"));
@@ -21,7 +19,7 @@ const [titleDarkMode , setTitleDarkMode] = useState('Dark Mode')
             <h1 className="nav-title">Where in the world?</h1>
 
             <p className="darkMode" onClick={handleTheme } >
-              {navIcon}
+         
               {/* Dark Mode */}
               {titleDarkMode}
             </p>
