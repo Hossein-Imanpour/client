@@ -133,14 +133,23 @@ light .input{
   background-color:hsla(0, 0%, 52%, 0.411);
 }
 .dark .select{
-  background-color: hsl(209, 23%, 22%);
+  background-color: hsl(209, 23%, 22%) ;
   color: #fff;
 }
-
-
+.light .patent-card {
+  background-color: rgba(255, 255, 255, 0.425)      ;
+}
+.dark .patent-card{
+  background-color: hsla(209, 26%, 17%, 0.404);
+  color: #fff;
+}
+.light .detail-btn{
+  box-shadow: 2px 2px 4px 1px #000;
+}
 /* =================================  detail page  ============================== */
 .patent-card{
-  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 10.4rem;
 }
 .parent-section-detail{
   display: flex;
@@ -153,7 +162,7 @@ light .input{
   width: 100px;
   height: 25px;
   border-radius: .5rem;
-
+  box-shadow: 2px 2px 4px 1px red;
 }
 .imgs-detail{
   width: 600px;
